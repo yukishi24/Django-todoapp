@@ -9,6 +9,9 @@
             <th>
                 {{task.title}}
             </th>
+            <td>
+                <a href="{% url "task" task.id %}">確認</a>
+            </td>
         </tr>
     {% endfor %}
 </table>
