@@ -12,6 +12,8 @@
             </th>
             <td>
                 <a href="{% url "task" task.id %}">確認</a>
+                <a href="{% url "edit-task" task.id %}">更新</a>
+                <a href="{% url "delete-task" task.id %}">削除</a>
             </td>
         </tr>
     {% endfor %}
