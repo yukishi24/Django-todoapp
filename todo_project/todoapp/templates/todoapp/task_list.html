@@ -1,5 +1,8 @@
 {% if request.user.is_authenticated  %}
 <p>{{request.user}}</p>
+{% comment %} <a href="{% url 'logout' %}">ログアウト</a> {% endcomment %}
+{% else %}
+<a href="{% url 'login' %}">ログイン</a>
 {% endif %}
 
 
